@@ -1,15 +1,20 @@
 import styled from "styled-components";
 import { myTheme } from "../styles/Theme.styled";
 
-export const Button = styled.button`
+type ButtonPropsType = {
+  color?: string;
+  textColor?: string;
+};
+
+export const Button = styled.button<ButtonPropsType>`
   width: 86px;
   height: 30px;
   float: left;
   margin-left: 20px;
   flex-shrink: 0;
   border-radius: 5px;
-  background-color: ${myTheme.colors.blue.light};
-  color: ${myTheme.colors.white};
+  background-color: ${(props) => props.color || "#4E71FE"};
+  color: ${(props) => props.textColor || "#ffff"};
   font-size: 10px;
   font-style: normal;
   font-weight: 700;

@@ -14,8 +14,17 @@ export const myTheme = {
       light: "#4E71FE",
     },
 
+    yellow: {
+      light: "#e3ff7f",
+    },
+
     white: "#FFF",
     back: "#FFF",
     shadow: "#rgba(0, 0, 0, 0.10)",
+  },
+
+  media: {
+    tablet: "screen and (max-width: 800px)",
+    mobile: "scren and (max-width: 600px)",
   },
 };
