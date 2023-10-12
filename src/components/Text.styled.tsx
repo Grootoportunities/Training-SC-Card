@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { myTheme } from "../styles/Theme.styled";
 
-export const Text = styled.div`
+export const Text = styled.p`
   margin: 20px;
   width: 260px;
   height: 40px;
@@ -11,4 +11,5 @@ export const Text = styled.div`
   font-weight: 500;
   line-height: 20px;
   text-align: left;
+ 
 `;

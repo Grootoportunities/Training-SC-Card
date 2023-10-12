@@ -7,6 +7,7 @@ type ButtonPropsType = {
 };
 
 export const Button = styled.button<ButtonPropsType>`
+  border: 0;
   width: 86px;
   height: 30px;
   float: left;
